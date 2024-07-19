@@ -14,13 +14,14 @@ With Glemail, you set up once and switching provider is as easy as invoking the 
 - SendGrid (coming soon)
 - Postmark (coming soon)
 - Resend (coming soon)
-- ...and more
+
+...and more
 
 ### Usage
 
 It's still very easy for usage. It currently works for MailGun. You would set it up like below:
 
-```
+```gleam
 import glemail
 import glemail/provider
 import gleam/hackney
