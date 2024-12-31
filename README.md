@@ -39,6 +39,6 @@ let req =
     |> glemail.request()
 
 // Send the request using hackney or any email client of your choice
-let assert Ok(response) = hackney.send(request)
+let assert Ok(response) = hackney.send(req)
 
 ```
