@@ -2,13 +2,12 @@ import gleam/http/request.{type Request}
 import gleam/int
 import gleam/list
 import gleam/string
-import ids/nanoid
 
 pub fn add(
   request: Request(String),
   body: List(#(String, String)),
 ) -> Request(String) {
-  let boundary_key = nanoid.generate()
+  let boundary_key = int.to_string(int.random(10_000_000))
   let boundary = string.append("--", boundary_key)
 
   let content =
